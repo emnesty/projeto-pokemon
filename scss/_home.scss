@@ -20,6 +20,13 @@
                             }
                         }
                     }
+                    .area-explore {
+                        .txt {
+                            .icon {
+                                background-color: hwb(220 69% 11% / 0.3);
+                            }
+                        }
+                    }
                 }
             }
             &:after {
@@ -40,6 +47,10 @@
                 height: 70.6rem;
                 background-size: cover;
                 padding-top: 13.3rem;
+                .container {
+                    position: relative;
+                    height: 100%;
+                }
                 .text {
                     .tag {
                         margin: 0 auto;
@@ -81,7 +92,108 @@
                     display: flex;
                     align-items: flex-end;
                     justify-content: space-between;
+                    .txt {
+                        position: relative;
+                        top: -3.9rem;
+                        left: -2.4rem;
+                        display: flex;
+                        align-items: center;
+                        transform: rotate(-90deg);
+                        .icon {
+                            width: 40px;
+                            height: 40px;
+                            background-color: #C90C0C;
+                            border-radius: 50%;
+                            @include centerTotalFlex;
+                            transform: rotate(90deg);
+                        }
+                        span {
+                            font-weight: 500;
+                            font-size: 1.3rem;
+                            line-height: 150%;
+                            color: #FFFFFF;
+                            margin-left: 3rem;
+                        }
+                    } 
+                    .swiper-pagination {
+                        position: relative;
+                        .swiper-pagination-bullet {
+                            width: 0.7rem;
+                            height: 0.7rem;
+                            background-color: #FFFFFF;
+                            &:not(:first-child){
+                                margin-left: 0.8rem;
+                            }
+                        }
+                    }
                 }
+            }
+        }
+    }
+}
+
+.s-all-info-pokemons {
+    position: relative;
+    padding-top: 11.9rem;
+    margin-top: -28.8rem;
+    z-index: 2;
+    .top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 16.8rem;
+        h2 {
+            max-width: 26.5rem;
+        }
+        .search {
+            margin-top: 2.2rem;
+        }
+    }
+    .area-all {
+        display: flex;
+        .left-container {
+            width: 100%;
+            max-width: 23.9rem;
+            border-right: 1px solid #EFF3F6;
+            padding-top: 7.1rem;
+            ul {
+                li {
+                    &:not(:last-child){
+                        margin-bottom: 4rem;
+                    }
+                }
+            }
+        }
+        .right-container {
+            width: 100%;
+            padding-top: 7.1rem;
+            padding-left: 7.5rem;
+            padding-bottom: 7.5rem;
+            .top-container {
+                margin-bottom:6.3rem ; 
+                & > div {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 600;
+                        font-size: 1.8rem;
+                        line-height: 150%;
+                        color: #4D5053;
+                        margin-left: 0.6rem;   
+                                       
+                    }
+                }
+            }
+            .all {
+                margin-bottom: 6.8rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 3.2rem;
+            }
+            .btn-load-more {
+                display: table;
+                margin: 0 auto;
             }
         }
     }
