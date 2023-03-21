@@ -23,5 +23,14 @@ cardPokemon.forEach(card => {
   card.addEventListener('click', openDetailsPokemon);
 })
 
-bntCloseModal.addEventListener('click', closeDetailsPokemon);
+if(bntCloseModal) {
+  bntCloseModal.addEventListener('click', closeDetailsPokemon);
+}
 
+
+
+const btnDropdownSelect = document.querySelector('.js-open-select-custom');
+
+btnDropdownSelect.addEventListener('click', () => {
+  btnDropdownSelect.parentElement.classList.toggle('active')
+})

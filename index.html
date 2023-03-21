@@ -151,17 +151,41 @@
             </div>
           </div>
           <div class="select-custom">
-            <button class="item-selected">
+            <button class="item-selected js-open-select-custom">
               <span>Show:</span>
               <strong>All</strong>
             </button>
             <ul class="dropdown-select">
               <li>
-                <button>
+                <button class="type-filter active">
                   <div class="icon">
                     <img src="img/icon-all.svg" alt="">
                   </div>
                   <span>All</span>
+                </button>
+              </li>
+              <li>
+                <button class="type-filter ghost">
+                  <div class="icon">
+                    <img src="img/icon-types/ghost.svg" alt="">
+                  </div>
+                  <span>Ghost</span>
+                </button>
+              </li>
+              <li>
+                <button class="type-filter ground">
+                  <div class="icon">
+                    <img src="img/icon-types/ground.svg" alt="">
+                  </div>
+                  <span>Ground</span>
+                </button>
+              </li>
+              <li>
+                <button class="type-filter grass">
+                  <div class="icon">
+                    <img src="img/icon-types/grass.svg" alt="">
+                  </div>
+                  <span>Grass</span>
                 </button>
               </li>
             </ul>
@@ -299,7 +323,19 @@
       </div>
     </div>
   </section>
-<!-- 
+
+  <footer>
+    <div class="container">
+      <div class="text">
+        <h3>Módulo JavaScript</h3>
+        <p>Consumindo e exibindo dados de uma API</p>
+      </div>
+      <a href="https://codeboost.com.br" target="_blank">
+        <img src="img/codeboost.svg" alt="">
+      </a>
+    </div>
+  </footer>
+
   <div class="modal" type-pokemon-modal="grass" id="js-modal-details">
     <div class="overlay"></div>
     <div class="box">
@@ -433,17 +469,6 @@
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="text">
-        <h3>Módulo JavaScript</h3>
-        <p>Consumindo e exibindo dados de uma API</p>
-      </div>
-      <a href="https://codeboost.com.br" target="_blank">
-        <img src="img/codeboost.svg" alt="">
-      </a>
-    </div>
-  </footer> -->
 
 
 <script src="js/plugins.js"></script>
